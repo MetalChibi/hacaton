@@ -55,8 +55,19 @@ li{
     height: 100%;
     background: rgba(255, 255, 255, 0.5);
 }
-.main-nav a:last-child{
+
+.main-nav a:nth-last-child(2){
   margin-left: auto;
+}
+
+.main-nav a:last-child {
+  width: 50px;
+}
+.main-nav a:last-child i{
+  position: absolute;
+  top: -2px;
+  left: 15px;
+  font-size: 2.2rem;
 }
 
 /* ---- Layout Containers ---- */
