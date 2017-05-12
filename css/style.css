@@ -1,0 +1,33 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	font: 0.85rem/1.5 'Arial', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+/* ---- Layout Containers ---- */
+
+/* ================================= 
+  Media Queries
+==================================== */
