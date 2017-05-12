@@ -1,33 +1,80 @@
 /* ================================= 
   Base Element Styles
 ==================================== */
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
-	font: 0.85rem/1.5 'Arial', sans-serif;
+    font: 0.85rem/1.5 'Arial', sans-serif;
 }
-
-a{
-  text-decoration: none;
+a {
+    text-decoration: none;
 }
-
-li{
-  list-style: none;
+li {
+    list-style: none;
 }
-
-
 /* ================================= 
-  Base Layout Styles
-==================================== */
+  Base Layout Styles*/
 
+#bookPopUp {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.bookPopUp .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+}
+.order {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+.bookPopUp button {
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.bookPopUp footer {
+    clear: both;
+}
+.bookPopUpWrap {
+    padding: 20px;
+    background-color: white;
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bookImg {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 10px auto 0;
+}
+#bookInfo,
+.exchangeInfo {
+    float: left;
+}
+.exchangeInfo {
+    padding-left: 20px;
+}
+#registration {
+    display: none;
+}
 /* ---- Navigation ---- */
-
 /* ---- Layout Containers ---- */
-
 /* ================================= 
   Media Queries
 ==================================== */
