@@ -11,6 +11,10 @@ body {
 	font: 0.85rem/1.5 'Arial', sans-serif;
 }
 
+main{
+   padding: 1rem 4rem;
+}
+
 a{
   text-decoration: none;
 }
@@ -71,6 +75,40 @@ li{
 }
 
 /* ---- Layout Containers ---- */
+.user-page{
+  padding: 2rem; 
+}
+
+.user-page__heading{
+  margin-bottom: 20px;
+  color: #777;
+}
+
+.user-page__nav a{
+  padding: 15px;
+  color: #999;
+  position: relative;
+  font-weight: bold;
+}
+
+.user-page__nav a.active{
+  background: #f6f6f6;
+}
+
+.advert-wrapper{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  background: #f6f6f6;
+}
+
+.advert{
+  display: flex;
+  margin: 10px;
+  background: #fff;
+  color: #333;
+  box-shadow: 0 15px 40px rgba(21,29,116,0.2);
+}
 
 /* ================================= 
   Media Queries
