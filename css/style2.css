@@ -1,6 +1,5 @@
 /*--Pretty radion buttons--*/
 input[type="radio"] + label::before {
-  / Outer Circle of radio button /
   border: 1px solid grey;
   content: ' ';
   display: inline-block;
@@ -12,7 +11,6 @@ input[type="radio"] + label::before {
 }
 
 input[type="radio"] + label::after {
-  / Inner Circle of radio button /
   border: 0px solid  #F23F79;
   content: ' ';
   background: transparent;
@@ -29,6 +27,18 @@ input[type="radio"] + label::after {
 
 input[type="radio"] {
   display: none;
+}
+
+input[type="radio"]:checked + label::after {
+  background:  #F23F79;
+}
+
+input[type="radio"]:checked + label::before {
+  border-color:  #F23F79;
+}
+
+input[type="radio"]:checked + label {
+  color:  #F23F79;
 }
 
 
