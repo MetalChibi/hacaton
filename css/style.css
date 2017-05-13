@@ -37,7 +37,12 @@ button, input{
 
 .sidebar{
     width: 22%;
-    background: red;
+    padding: 1rem;
+}
+
+#filter{
+    background-color: #3b3e99;
+    color: #fff;
 }
 
 .main-content{
@@ -47,9 +52,9 @@ button, input{
 }
 
 
-.feedWrapper{
+.feed-wrapper{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -203,7 +208,6 @@ button, input{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /*align-items: center;*/
     padding: 10px;
 }
 
@@ -255,6 +259,34 @@ button, input{
 .main-btn:active{
     top: 2px;
     box-shadow: none;
+}
+
+
+
+/*---sidebar----*/
+
+
+
+.genre-list li {
+	padding: 5px 0; 
+	border-bottom: 1px dotted #9FA0A1;
+}
+.genre-list li:last-child {
+	border: none;
+}
+
+.genre-list li a {
+	font-weight: bold;
+    color: #fff;
+}
+.genre-list li a:hover {
+	text-decoration: underline;
+}
+
+.genre-list li span {
+	display: inline-block;
+	margin-left: 5px;
+	color: rgba(255, 255, 255, 0.5)
 }
 
 /*--Input forms--*/

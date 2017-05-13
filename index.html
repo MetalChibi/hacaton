@@ -12,9 +12,9 @@
 <body>
 	<header>
 		<nav class="main-nav">
-			<a href="/">Головна</a>
-			<a href="#"><i class="fa fa-user-circle-o"></i> Мій кабінет</a>
-			<a href="#">Вийти <i class="fa fa-sign-out"></i></a>
+			<a href="/">Home</a>
+			<a href="#"><i class="fa fa-user-circle-o"></i> My profile</a>
+			<a href="#">LogOut<i class="fa fa-sign-out"></i></a>
 			<a href="/" class="logo">
 				<i class="fa fa-book"></i>
 			</a>
@@ -41,7 +41,7 @@
 					<i class="fa fa-search"></i>
 				</form>
 			</header>
-			<div class="feedWrapper">
+			<div class="feed-wrapper">
 				<div class="feed">
 					<figure class="feedBook">
 						<!-- книга -->
@@ -146,41 +146,9 @@
 		</main>
 		<aside class="sidebar" id="filter">
 			<!-- фільтр -->
-			<form>
-				<select>
-					<option value="all" selected>All</option>
-					<option value="scienceFiction">Science fiction</option>
-					<option value="satire">Satire</option>
-					<option value="drama">Drama</option>
-					<option value="actionAndAdventures">Action and Adventure</option>
-					<option value="romance">Romance</option>
-					<option value="mystery">Mystery</option>
-					<option value="horror">Horror</option>
-					<option value="selfHelp">Self help</option>
-					<option value="health">Health</option>
-					<option value="guide">Guide</option>
-					<option value="travel">Travel</option>
-					<option value="children">Children's</option>
-					<option value="religion">Religion, Spirituality & New Age</option>
-					<option value="science">Science</option>
-					<option value="history">History</option>
-					<option value="math">Math</option>
-					<option value="anthology">Anthology</option>
-					<option value="poetry">Poetry</option>
-					<option value="encyclopedias">Encyclopedias</option>
-					<option value="dictionaries">Dictionaries</option>
-					<option value="comics">Comics</option>
-					<option value="art">Art</option>
-					<option value="cookbooks">Cookbooks</option>
-					<option value="diaries">Diaries</option>
-					<option value="journals">Journals</option>
-					<option value="pray">Prayer books</option>
-					<option value="series">Series</option>
-					<option value="trilogy">Trilogy</option>
-					<option value="biographies">Biographies</option>
-					<option value="autobiographies">Autobiographies</option>
-					<option value="fantasy">Fantasy</option>
-				</select>
+			
+			<form>	
+					
 				<select>
 					<option value="all" selected>All</option>
 					<option value="ua">Ukrainian</option>
@@ -200,6 +168,28 @@
 				<input type="number" name="bookprice" placeholder="0.00 грн">
 				<input type="submit" name="">
 			</form>
+
+			<h4 class="sidebar-title">OUR CATEGORIES</h4>
+			<ul class="genre-list">
+					<li><a href="#">Science fiction</a><span>(5)</span></li>
+					<li><a href="#">Satire</a><span>(3)</span></li>
+					<li><a href="#">Drama</a><span>(8)</span></li>
+					<li><a href="#">Action and Adventure</a><span>(12)</span></li>
+					<li><a href="#">Romance</a><span>(7)</span></li>
+					<li><a href="#">Mystery</a><span>(15)</span></li>
+					<li><a href="#">Horror</a><span>(12)</span></li>
+					<li><a href="#">Self help</a><span>(7)</span></li>
+					<li><a href="#">Health</a><span>(15)</span></li>
+					<li><a href="#">Travel</a><span>(12)</span></li>
+					<li><a href="#">Children's</a><span>(7)</span></li>
+					<li><a href="#">Religion, Spirituality & New Age</a><span>(15)</span></li>
+					<li><a href="#">Science</a><span>(15)</span></li>
+					<li><a href="#">History</a><span>(12)</span></li>
+					<li><a href="#">Journals</a><span>(7)</span></li>
+					<li><a href="#">Autobiographies</a><span>(15)</span></li>
+					<li><a href="#">Fantasy</a><span>(7)</span></li>
+					<li><a href="#">Comics</a><span>(15)</span></li>
+				</ul>
 		</aside>
 	</div>
 	<footer></footer>
