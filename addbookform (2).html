@@ -1,0 +1,216 @@
+
+<html>
+<head>
+	<link rel="stylesheet" href="css/style2.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<script src="https://use.fontawesome.com/aa00dd93b3.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.name,.genre,  .year{
+			width: 50%;
+			float: left;
+		}
+		.genre label, .year label {
+			display: block!important;
+		}
+		#gender, .year .form-field{
+			width: 95%;
+		}
+		#addBook::after{
+			content: '';
+			display: block;
+			clear: both;
+		}
+		.cond, .lang{
+			display: block;
+			width: 50%;
+			float: left;
+		}
+		.hidden{
+			visibility: hidden;
+		}
+		div{
+			position: relative;
+		}
+		#termsReturn:checked ~ .dateChecked {
+			display: inline-block;
+			left: 130px;
+			position: absolute;
+			top: 11px;
+		}
+		#termsWithExchange:checked ~ div .textareaBook {
+			display: initial;
+			height: 65px;
+		}
+		#termsWithExchange:checked ~ .textarea-wrap{
+			position: absolute;
+			top: -8px;
+			left: 130px;
+		}
+		#termsSell:checked ~ .priceActive{
+			position: absolute;
+			top: 10px;
+			left: 130px;
+		}
+		#addBook{
+			position: relative;
+		}
+		.addBookBtn , .cencel{
+			position: absolute!important;
+			background-color: #F23F79;
+			border-radius: 10px;
+			color: white;
+			right: 20px;
+			width: 200px;
+			height: 50px;
+			margin: 0!important;
+		}
+		.addBookBtn{
+			bottom: 120px;
+		}
+		.cencel{
+			bottom: 50px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav class="main-nav">
+			<a href="index.html">Home</a>
+			<a href="#"><i class="fa fa-user-circle-o"></i> My profile</a>
+			<a href="#">LogOut<i class="fa fa-sign-out"></i></a>
+			<a href="/" class="logo">
+				<i class="fa fa-book"></i>
+			</a>
+		</nav>
+	</header>
+	<div class="form-wrapper">
+		<h1 class="form-title">Add your book</h1>
+		<p class="note">* Required fields.</p>
+		<form id="addBook">
+			<!-- name -->
+			<div class="name">
+				<label for="book-name">
+					<i class="fa fa-user"></i>* Book name: 
+				</label>
+				<input class="form-field__block" type="text" name="book-name" placeholder="Name" required="">
+			</div>
+
+			<!--author-->
+			<div class="name">
+				<label for="author"> 
+					<i class="fa fa-book"></i>* Author name:
+				</label>
+				<input class="form-field__block" type="text" name="author" placeholder="Author" required="">
+			</div>
+
+			<!--genre-->
+			<div class="genre">
+				<label for="gender">
+					<i class="fa fa-venus-mars"></i>* Genre:
+				</label>
+				<select id="gender" placeholder="Genre" required class="form-field">
+					<option value="" selected="" disabled="">Pick genre</option>
+					<option value="scienceFiction">Science fiction</option>
+					<option value="satire">Satire</option>
+					<option value="drama">Drama</option>
+					<option value="actionAndAdventures">Action and Adventure</option>
+					<option value="romance">Romance</option>
+					<option value="mystery">Mystery</option>
+					<option value="horror">Horror</option>
+					<option value="selfHelp">Self help</option>
+					<option value="health">Health</option>
+					<option value="guide">Guide</option>
+					<option value="travel">Travel</option>
+					<option value="children">Children's</option>
+					<option value="religion">Religion, Spirituality &amp; New Age</option>
+					<option value="science">Science</option>
+					<option value="history">History</option>
+					<option value="math">Math</option>
+					<option value="anthology">Anthology</option>
+					<option value="poetry">Poetry</option>
+					<option value="encyclopedias">Encyclopedias</option>
+					<option value="dictionaries">Dictionaries</option>
+					<option value="comics">Comics</option>
+					<option value="art">Art</option>
+					<option value="cookbooks">Cookbooks</option>
+					<option value="diaries">Diaries</option>
+					<option value="journals">Journals</option>
+					<option value="pray">Prayer books</option>
+					<option value="series">Series</option>
+					<option value="trilogy">Trilogy</option>
+					<option value="biographies">Biographies</option>
+					<option value="autobiographies">Autobiographies</option>
+					<option value="fantasy">Fantasy</option>
+				</select>
+			</div>
+			<div class="year">
+				<label for="year">
+					<i class="fa fa-calendar"></i>* Year: 
+				</label>
+				<input class="form-field" type="number" name="year" required placeholder="E.g., 2017">
+			</div>
+			<hr class="hidden">
+			<div class="cond">
+				<label for="bookCondition"> * Book condition: </label>
+				<input type="radio" name="bookCondition" id="cond1" value="1" required><label for="cond1"> 1 </label> 
+				<input type="radio" name="bookCondition" id="cond2" value="2"><label for="cond2"> 2 </label> 
+				<input type="radio" name="bookCondition" id="cond3" value="3"><label for="cond3"> 3 </label> 
+				<input type="radio" name="bookCondition" id="cond4" value="4"><label for="cond4"> 4 </label> 
+				<input type="radio" name="bookCondition" id="cond5" value="5"><label for="cond5"> 5 </label> 
+			</div>
+			<!--language-->
+			<div class="lang">
+				<label for="Language">
+					<i class="fa fa-globe"></i>* Language:
+				</label>
+				<select class="form-field" name="Language" required>
+					<option value="" selected="" disabled="">Pick language</option>
+					<option value="ua">Ukrainian</option>
+					<option value="ru">Russian</option>
+					<option value="en">English</option>
+					<option value="pl">Polish</option>
+				</select>
+			</div>
+			<!--year-->
+			<!--book photo-->
+			<label for="bookphoto">Upload photo:</label>
+			<input type="file" name="bookphoto">
+			<hr>
+			<!--terms-->
+			<p>Exchange terms:</p>
+			<div>
+				<input type="radio" name="exchangeTerms" value="return" id="termsReturn">
+				<label for="termsReturn">With return</label>
+				<div class="dateChecked">Due date: <input type="date" value="returndate" class="form-field"></div>
+			</div>
+			<div>
+				<input type="radio" name="exchangeTerms" value="noReturn" id="termsNoReturn">
+
+				<label for="termsNoReturn">No return</label><br>
+			</div>
+			<div>
+				<input type="radio" name="exchangeTerms" value="withExchange" id="termsWithExchange">
+
+				<label for="termsWithExchange">Exchange</label>
+				<div class="textarea-wrap"><textarea class='textareaBook form-field' placeholder="Exchange for..."></textarea></div>
+			</div>
+			<div>
+				<input type="radio" name="exchangeTerms" value="sell" id="termsSell">
+
+				<label for="termsSell">Sell</label> 
+				<div class="priceActive">Sell price: 
+					<input type="number"  class="form-field" name="bookprice" placeholder="$0.00"></div>
+				</div>
+				<!--OK-->
+				<button class="addBookBtn">Add book</button>
+				<button class="cencel">Cancel</button> <br>
+
+
+			</form>
+		</div>
+		<footer class="main-footer">
+			<p>© 2017 All Right Reserved. Book-book</p>
+		</footer>
+	</body>
+	</html>

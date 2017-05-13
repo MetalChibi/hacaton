@@ -55,7 +55,7 @@ button, input{
 }
 
 .main-content{
-    width: 56%;
+    width: 78%;
     overflow-y: scroll;
     background: #f6f6f6;
 }
@@ -246,10 +246,9 @@ button, input{
 
 .feedBook img {
     max-width: 100%;
-    /*margin-left: auto;
-    margin-right: auto;*/
-    margin: 10px;
+    margin: 10px auto 0px auto;
     max-height: 200px;
+    display: block;
 }
 
 .bookInfo-wrapper{
