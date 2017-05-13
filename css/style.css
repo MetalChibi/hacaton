@@ -72,7 +72,7 @@ button, input{
     flex-wrap: wrap;
 }
 
-/*-----primary header-----*/
+/*-----primary header & footer-----*/
 
 .primary-header{
     display: flex;
@@ -83,6 +83,15 @@ button, input{
     background: #fff;
     box-shadow: 1px 1px 3px rgba(0,0,0,.2)
 }
+    .main-footer{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    /* margin-top: 70px; */
+     background-color: #989AD7;
+     color: white;
+     height: 70px;
+    }
 
 
 /*---search field-----*/
