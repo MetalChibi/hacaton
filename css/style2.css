@@ -1,0 +1,133 @@
+/* Terms triggers */
+hr {
+  margin: 15 0 15 0;
+}
+
+.priceActive{
+    display: none;
+   }
+   #termsSell:checked ~ .priceActive {
+    display: block;
+   }
+   .textareaBook {
+    display: none;
+   }
+   #termsWithExchange:checked ~ div .textareaBook {
+    display: initial;
+   }
+   .dateChecked {
+    display: none;
+   }
+   #termsReturn:checked ~ .dateChecked {
+    display: block;
+   }
+   input[type=date]{
+    background-color: #F1F1FB;
+   }
+   textarea {
+    resize: none;
+   }
+
+
+
+
+/*--Input forms--*/
+
+.form-wrapper{
+  width: 50%;
+  margin: 5% auto;
+  box-shadow: 1px 1px 3px rgba(0,0,0,.3);
+}
+
+.form-title{
+  padding: 15px 10px;
+  border: 1px solid rgba(0,0,0,.2);
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  background: #989AD7;
+}
+
+.note{
+    font-size: 0.7rem;
+    color: red;
+}
+
+#addBook{
+    padding: 1.5rem;
+}
+
+.form-field__block,
+.form-field{
+    margin-bottom: 15px;
+    padding: 5px 10px 5px 30px;
+    border-radius: 10px;
+    background: #F1F1FB;
+    outline: none;
+    border: none;
+}
+
+.form-field__block{
+    width: 95%;
+    display: block;
+}
+
+#addBook label{
+    display: inline-block;
+    margin-top: 10px;
+    position: relative;
+    color: #777;
+}
+
+.show-condition-form {
+  display: visible;
+}
+.hide-condition {
+  display: none;
+}
+
+/*--copied styles from style.css(when combine css need to be deleted from here)---*/
+.main-btn{
+    position: relative;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color:#fff;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+    background: #F23F79;
+}
+
+.main-btn:hover{
+    background: #d60e4f;
+}
+
+.main-btn:active{
+    top: 2px;
+    box-shadow: none;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: 0.85rem/1.5 'Arial', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+li {
+    list-style: none;
+}
+
+button{
+    border: none;
+}

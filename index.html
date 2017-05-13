@@ -1,14 +1,199 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>book market</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="https://use.fontawesome.com/aa00dd93b3.js"></script>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="css/style.css">
+	<title>Book Market</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://use.fontawesome.com/aa00dd93b3.js"></script>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-	kjdhgkdrghlsehdf;aohldfhvnslkdngSssschange
-<script src="script.js"></script>
+	<header>
+		<nav class="main-nav">
+			<a href="/">Home</a>
+			<a href="#"><i class="fa fa-user-circle-o"></i> My profile</a>
+			<a href="#">LogOut<i class="fa fa-sign-out"></i></a>
+			<a href="/" class="logo">
+				<i class="fa fa-book"></i>
+			</a>
+		</nav>
+	</header>
+	<div class="content-wrapper">
+		<aside class="sidebar">
+			kcsldkcslkdvnsdklcnskdlnc
+			<!-- реклама -->
+		</aside>
+		<main class="main-content">
+			<header class="primary-header">
+				<button class="main-btn">Add new book</button>
+				<div class="sort">
+					<label for="sort">Sort by:</label>
+					<select name="sort">
+						<option value="all" selected>date</option>
+						<option value="scienceFiction">name</option>
+						<option value="satire">rate</option>
+					</select>
+				</div>
+				<form class="navbar__search">
+					<input type="search" class="navbar__search__input" name="search" />
+					<i class="fa fa-search"></i>
+				</form>
+			</header>
+			<div class="feed-wrapper">
+				<div class="feed">
+					<figure class="feedBook">
+						<!-- книга -->
+						<img src="http://placehold.it/200x150" alt="book image" width="150" height="150">
+						<div class="bookInfo-wrapper">
+							<figcaption class="bookInfo">
+								<div class="bookName">Book Name</div>
+								<div class="bookAuthor">Author</div>
+								<div class="bookUser">
+									<span class="userName">User1</span>
+									<div class="rating">
+										<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+									</div>
+								</div>
+							</figcaption>
+							<div class="bookDetails">
+								<button class="feed-btn">More</button>
+							</div>
+						</div>
+					</figure>
+
+				</div>
+				<div class="feed">
+					<figure class="feedBook">
+						<!-- книга -->
+						<img src="http://placehold.it/200x150" alt="book image" width="150" height="150">
+						<div class="bookInfo-wrapper">
+							<figcaption class="bookInfo">
+								<div class="bookName">Book Name</div>
+								<div class="bookAuthor">Author</div>
+								<div class="bookUser">
+									<span class="userName">User1</span>
+									<div class="rating">
+										<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+									</div>
+								</div>
+							</figcaption>
+							<div class="bookDetails">
+								<button class="feed-btn">More</button>
+							</div>
+						</div>
+					</figure>
+
+				</div>
+				<div class="feed">
+					<figure class="feedBook">
+						<!-- книга -->
+						<img src="http://placehold.it/200x150" alt="book image" width="150" height="150">
+						<div class="bookInfo-wrapper">
+							<figcaption class="bookInfo">
+								<div class="bookName">Book Name</div>
+								<div class="bookAuthor">Author</div>
+								<div class="bookUser">
+									<span class="userName">User1</span>
+									<div class="rating">
+										<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+									</div>
+								</div>
+							</figcaption>
+							<div class="bookDetails">
+								<button class="feed-btn">More</button>
+							</div>
+						</div>
+					</figure>
+
+				</div>
+				<section id="bookPopUp">
+					<div class="bookPopUpWrap">
+						<img src="img/book.jpg" alt="" class="bookImg">
+						<button class="close">Закрити</button>
+						<p>з повернням/без повернення</p>
+						<h3>Назва книжки</h3>
+						<div id="bookInfo">
+							<p>Автор: <span>Муха В.М.</span></p>
+							<p>Жанр: <span>фантастика</span></p>
+							<p>Рік: <span>2005</span></p>
+							<p>Мова: <span>англійська</span></p>
+						</div>
+						<div class="exchangeInfo">
+							<p class="city">Місто: <span>Львів</span></p>
+							<p></p>
+						</div>
+						<footer>
+							<p>Власник: <a href="#" target="_blank">Імя</a></p>
+							<button class="order">Замовти</button>
+						</footer>
+					</div>
+				</section>
+			</div>
+			<section id="registration">
+				<form class="registrationForm">
+					<fieldset class="registrationFormFieldset">
+						Ім'я*<br> <input type="text" name="userName" placeholder="Ім'я" size="35" required><br> e-mail*
+						<br> <input type="email" name="userEmail" placeholder="e-mail" size="35" required><br> телефон*(5-15 цифр)<br>
+						<input type="tel" name="userPhone" placeholder="телефон" size="13" pattern="[0-9]{5,15}" required><br> місто*
+						<br> <input type="text" name="userCity" placeholder="місто" size="35" onKeyUp="if(/[^a-zA-Zа-яА-Яі .]/i.test(this.value)){this.value='';}"
+						 required><br>
+					</fieldset>
+					<button>Ok</button>
+				</form>
+			</section>
+		</main>
+		<aside class="sidebar" id="filter">
+			<!-- фільтр -->
+			
+			<form>	
+					
+				<select>
+					<option value="all" selected>All</option>
+					<option value="ua">Ukrainian</option>
+					<option value="ru">Russian</option>
+					<option value="en">English</option>
+					<option value="pl">Polish</option>
+				</select>
+				<input type="number" name="year" placeholder="Year of publishing">
+				<input type="checkbox" checked id="filterReturn" name="return" value="return">
+				<label for="filterReturn">Return</label>
+				<input type="checkbox" checked id="filterNoReturn" name="" value="noReturn">
+				<label for="filterNoReturn">No Return</label>
+				<input type="checkbox" checked id="filterExchange" name="" value="noReturn">
+				<label for="filterExchange">Exchange</label>
+				<input type="checkbox" id="filterSell" name="" value="sell">
+				<label for="filterSell">Sell</label>
+				<input type="number" name="bookprice" placeholder="0.00 грн">
+				<input type="submit" name="">
+			</form>
+
+			<h4 class="sidebar-title">OUR CATEGORIES</h4>
+			<ul class="genre-list">
+					<li><a href="#">Science fiction</a><span>(5)</span></li>
+					<li><a href="#">Satire</a><span>(3)</span></li>
+					<li><a href="#">Drama</a><span>(8)</span></li>
+					<li><a href="#">Action and Adventure</a><span>(12)</span></li>
+					<li><a href="#">Romance</a><span>(7)</span></li>
+					<li><a href="#">Mystery</a><span>(15)</span></li>
+					<li><a href="#">Horror</a><span>(12)</span></li>
+					<li><a href="#">Self help</a><span>(7)</span></li>
+					<li><a href="#">Health</a><span>(15)</span></li>
+					<li><a href="#">Travel</a><span>(12)</span></li>
+					<li><a href="#">Children's</a><span>(7)</span></li>
+					<li><a href="#">Religion, Spirituality & New Age</a><span>(15)</span></li>
+					<li><a href="#">Science</a><span>(15)</span></li>
+					<li><a href="#">History</a><span>(12)</span></li>
+					<li><a href="#">Journals</a><span>(7)</span></li>
+					<li><a href="#">Autobiographies</a><span>(15)</span></li>
+					<li><a href="#">Fantasy</a><span>(7)</span></li>
+					<li><a href="#">Comics</a><span>(15)</span></li>
+				</ul>
+		</aside>
+	</div>
+	<footer></footer>
+	<script src="script.js"></script>
 </body>
+
 </html>
