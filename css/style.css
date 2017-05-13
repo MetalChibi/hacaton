@@ -40,6 +40,20 @@ button, input{
     padding: 1rem;
 }
 
+.sidebar-title{
+    font-size: 14pt;
+    font-weight: 100;
+    margin: 10px 0 6px 0;
+    border-bottom:  #DDBBDD 1px solid;
+}
+.sidebar-filters input[type="number"], select {
+    width: 40%;
+    border: 0px;
+    height: 20px;
+    border-radius: 5px;
+    margin: 4px;
+}
+
 #filter{
     background-color: #3b3e99;
     color: #fff;
@@ -102,22 +116,36 @@ button, input{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
-.bookPopUp .close {
+#bookPopUp .close {
     position: absolute;
     top: 10px;
     right: 10px;
     background-color: transparent;
+    cursor: pointer;
 }
 .order {
-    background-color: green;
     color: white;
     padding: 10px;
+    margin-top: 20px;
     width: 100%;
+    cursor: pointer;
+}
+.return{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: #3B3E99;
+    display: inline-block;
+    color: white;
+    padding: 3px 5px;
 }
 .bookPopUp button {
     border: none;
     cursor: pointer;
     outline: none;
+}
+.book-owner, .book-owner:link, .book-owner:hover{
+    color: black;
 }
 .bookPopUp footer {
     clear: both;
@@ -126,10 +154,16 @@ button, input{
     padding: 20px;
     background-color: white;
     position: absolute;
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 16px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.book-title{
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 .bookImg {
     width: 100px;
@@ -140,6 +174,7 @@ button, input{
 #bookInfo,
 .exchangeInfo {
     float: left;
+    width: 50%;
 }
 .exchangeInfo {
     padding-left: 20px;
@@ -266,7 +301,6 @@ button, input{
 /*---sidebar----*/
 
 .gende-list li {
- padding: 5px 0; 
  border-bottom: 1px dotted #9FA0A1;
 }
 .genre-list li:last-child {
@@ -274,7 +308,8 @@ button, input{
 }
 
 .genre-list li a {
- font-weight: bold;
+ margin: 12px; 
+ /*font-weight: bold;*/
     color: #fff;
 }
 .genre-list li a:hover {
@@ -284,9 +319,9 @@ button, input{
 .genre-list li span {
  display: inline-block;
  margin-left: 5px;
+ margin: 3px 0 3px 0;
  color: rgba(255, 255, 255, 0.5)
 }
-
 
 
 /*---Pretty scroll-----*/

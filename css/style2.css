@@ -41,6 +41,13 @@ input[type="radio"]:checked + label {
   color:  #F23F79;
 }
 
+/* pretty checkboxes?*/
+
+input[type="checkbox"] + label::after {
+  width: 15px;
+  height: 15px;
+}
+
 
 /* Terms triggers */
 hr {

@@ -7,6 +7,7 @@
 	<script src="https://use.fontawesome.com/aa00dd93b3.js"></script>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style2.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="script.js"></script>
   <script src="bookpopup.js" defer></script>
@@ -112,29 +113,28 @@
 					</figure>
 
 				</div>
-				<section id="bookPopUp">
+			<section id="bookPopUp">
 					<div class="bookPopUpWrap">
 						<img src="img/book.jpg" alt="" class="bookImg">
 						<button class="close">Закрити</button>
-						<p>з повернням/без повернення</p>
-						<h3>Назва книжки</h3>
+						<p class="return">з повернням</p>
+						<h3 class="book-title">Назва книжки</h3>
 						<div id="bookInfo">
-							<p>Автор: <span>Муха В.М.</span></p>
-							<p>Жанр: <span>фантастика</span></p>
-							<p>Рік: <span>2005</span></p>
-							<p>Мова: <span>англійська</span></p>
+							<p >Автор: <b>Муха В.М.</b></p>
+							<p>Жанр: <b>фантастика</b></p>
+							<p>Рік: <b>2005</b></p>
+							<p>Власник: <a href="#" target="_blank" class="book-owner">Імя</a></p>
 						</div>
 						<div class="exchangeInfo">
-							<p class="city">Місто: <span>Львів</span></p>
-							<p></p>
+							<p class="city">Місто: <b>Львів</b></p>
+							<p>Мова: <b>англійська</b></p>
+							<p>Стан книжки: <b>відмінний</b></p>
+							<p>Тел: <b>093725859</b></p>
 						</div>
-						<footer>
-							<p>Власник: <a href="#" target="_blank">Імя</a></p>
-							<button class="order">Замовти</button>
-						</footer>
+							<button class="order main-btn">Замовти</button>
 					</div>
 				</section>
-			</div>
+
 			<section id="registration">
 				<form class="registrationForm">
 					<fieldset class="registrationFormFieldset">
@@ -151,8 +151,10 @@
 		<aside class="sidebar" id="filter">
 			<!-- фільтр -->
 			
-			<form>	
+			<form class="sidebar-filters">	
 					
+
+			<h4 class="sidebar-title">FILTERS</h4>
 				<select>
 					<option value="all" selected>All</option>
 					<option value="ua">Ukrainian</option>
@@ -161,16 +163,21 @@
 					<option value="pl">Polish</option>
 				</select>
 				<input type="number" name="year" placeholder="Year of publishing">
+				<br>
 				<input type="checkbox" checked id="filterReturn" name="return" value="return">
 				<label for="filterReturn">Return</label>
+				<br>
 				<input type="checkbox" checked id="filterNoReturn" name="" value="noReturn">
 				<label for="filterNoReturn">No Return</label>
+				<br>
 				<input type="checkbox" checked id="filterExchange" name="" value="noReturn">
 				<label for="filterExchange">Exchange</label>
+				<br>
 				<input type="checkbox" id="filterSell" name="" value="sell">
 				<label for="filterSell">Sell</label>
 				<input type="number" name="bookprice" placeholder="0.00 грн">
-				<input type="submit" name="">
+				<br>
+				<input type="submit" class="main-btn" name="">
 			</form>
 
 			<h4 class="sidebar-title">OUR CATEGORIES</h4>
@@ -186,7 +193,7 @@
 					<li><a href="#">Health</a><span>(15)</span></li>
 					<li><a href="#">Travel</a><span>(12)</span></li>
 					<li><a href="#">Children's</a><span>(7)</span></li>
-					<li><a href="#">Religion, Spirituality & New Age</a><span>(15)</span></li>
+					<li><a href="#">Religion, Spirituality &amp; New Age</a><span>(15)</span></li>
 					<li><a href="#">Science</a><span>(15)</span></li>
 					<li><a href="#">History</a><span>(12)</span></li>
 					<li><a href="#">Journals</a><span>(7)</span></li>
