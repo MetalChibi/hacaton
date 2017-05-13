@@ -243,6 +243,15 @@ button, input{
     box-shadow: 0 10px 20px rgba(21,29,116,0.2);
 }
 
+
+.feedBook img {
+    max-width: 100%;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin: 10px;
+    max-height: 200px;
+}
+
 .bookInfo-wrapper{
     display: flex;
     flex-direction: column;
@@ -252,11 +261,15 @@ button, input{
 
 
 /*-------reting stars------*/
-.feedbook .rating {
+.feedBook .rating {
   text-align: center;
 }
-.bookUser .rating {
-  text-align: center;
+.userInfo .rating {
+  text-align: right;
+  display: inline-block;
+}
+.bookInfo .rating {
+  margin: 15px;
 }
 .rating {
   unicode-bidi: bidi-override;

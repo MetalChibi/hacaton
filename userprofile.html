@@ -14,20 +14,30 @@
 </head>
 <body>
 
-
+	<header>
+		<nav class="main-nav">
+			<a href="/">Home</a>
+			<a href="#"><i class="fa fa-user-circle-o"></i> My profile</a>
+			<a href="#">LogOut<i class="fa fa-sign-out"></i></a>
+			<a href="/" class="logo">
+				<i class="fa fa-book"></i>
+			</a>
+		</nav>
+	</header>
 
 <!--user settings-->
+<div class="userInfo">
 <img class="userpic" src="img/pic.jpg">
 <h1 class="username">John Doe</h1> 
-
-								<div class="bookUser">
 									<div class="rating">
 										<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
 									</div>
-								</div>
 <h2 class="usersettings">Personal data</h2>
 <p><b>Phone:</b> <span id="phoneNumber">+380001112233</span></p>
 <p><b>City:</b> <span id="phoneNumber">Lviv</span></p>
+</div>
+
+<div class="bookWrapper">
 <h2 class="usersettings">My transactions</h2>
 
 <figure class="userBook">
@@ -37,15 +47,33 @@
 								<div class="bookName">Hobbit</div>
 								<div class="bookAuthor">J. R. R. Tolkien</div>
 								<div class="bookSummary">Bacon ipsum dolor amet sausage doner kevin pancetta. Burgdoggen tenderloin cow venison shankle beef biltong turkey brisket strip steak pork belly drumstick beef ribs pork. Swine shoulder shank jerky turkey tail jowl chicken. Pork belly capicola salami tenderloin pork ham pork chop boudin.</div>
-								<div class="bookUser">
-									<p>Transaction rating:</p>
 									<div class="rating">
+										<p>Transaction rating</p>
 										<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
 									</div>
 								</div>
 							</figcaption>
-						</div>
-					</figure>
+</figure>
+
+<figure class="userBook">
+		<img src="img/pic.jpg" alt="book image" width="150" height="200">
+		<div class="bookInfo-wrapper">
+				<figcaption class="bookInfo">
+								<div class="bookName">Hobbit</div>
+								<div class="bookAuthor">J. R. R. Tolkien</div>
+								<div class="bookSummary">Bacon ipsum dolor amet sausage doner kevin pancetta. Burgdoggen tenderloin cow venison shankle beef biltong turkey brisket strip steak pork belly drumstick beef ribs pork. Swine shoulder shank jerky turkey tail jowl chicken. Pork belly capicola salami tenderloin pork ham pork chop boudin.</div>
+									<div class="rating">
+										<p>Transaction rating</p>
+										<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+									</div>
+								</div>
+							</figcaption>
+</figure>
+</div>
+</div>
+<footer class="main-footer">
+    <p>© 2017 All Right Reserved. Book-book</p>
+   </footer>
 
 </body>
 </html>

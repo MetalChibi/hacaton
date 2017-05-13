@@ -13,9 +13,12 @@
 }
 
 .username {
+	margin-top: 15px;
 	text-align: left;
 	color: #AAAABB;
-	display: inline-block;
+}
+.bookInfo {
+	position: relative;
 }
 .bookSummary {
 	font-size: 9pt;
@@ -34,6 +37,7 @@
 	font-size: 10pt;
 	font-style: italic;
 	color: #333333;
+	padding-bottom: 10pt;
 }
 .usersettings {
 	color: #888899;
@@ -42,9 +46,29 @@
 
 .userBook {
 	display: block;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	min-height: 222px;
 	border: #DDDDDD 1px solid;
     box-shadow: 0 10px 20px rgba(21,29,116,0.2);
+}
+
+.bookWrapper {
+	display: block;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bookWrapper .userBook:last-child {
+	margin-bottom: 50px;
+}
+.userInfo {
+	display: block;
+	width: 35%;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 220px;
 }
 
 .userBook img { 
