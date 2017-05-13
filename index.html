@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Book Market</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="https://use.fontawesome.com/aa00dd93b3.js"></script>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		<header>
-		</header>
-		<aside>
+
+<head>
+	<title>Book Market</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://use.fontawesome.com/aa00dd93b3.js"></script>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<nav class="main-nav">
+			<a href="/">Головна</a>
+			<a href="#"><i class="fa fa-user-circle-o"></i> Мій кабінет</a>
+			<a href="#">Вийти <i class="fa fa-sign-out"></i></a>
+			<a href="/" class="logo">
+				<i class="fa fa-book"></i>
+			</a>
+		</nav>
+	</header>
+	<div class="content-wrapper">
+		<aside class="sidebar">
+			kcsldkcslkdvnsdklcnskdlnc
 			<!-- реклама -->
 		</aside>
-		<main>
-			<div class="mainTop">
-				<button>Add book</button>
+		<main class="main-content">
+			<header class="mainTop">
+				<button class="main-btn">Add book</button>
 				<div class="sort">
 					<p>Sort by</p>
 					<a href="">date</a>
@@ -28,26 +40,73 @@
 						<input type="image" src="#">
 					</div>
 				</form>
-			</div>
+			</header>
 			<div class="feedWrapper">
 				<div class="feed">
 					<figure class="feedBook">
 						<!-- книга -->
-						<img src="#" alt="">
-						<figcaption class="bookInfo">
-							<div class="bookName">Book Name</div>
-							<div class="bookAuthor">Author</div>
-							<div class="bookUser">
-								<span class="userName">User1</span>
-								<span class="userRate">
-								<img src="#" alt="">
-								</span>
+						<img src="http://placehold.it/200x150" alt="book image" width="150" height="150">
+						<div class="bookInfo-wrapper">
+							<figcaption class="bookInfo">
+								<div class="bookName">Book Name</div>
+								<div class="bookAuthor">Author</div>
+								<div class="bookUser">
+									<span class="userName">User1</span>
+									<div class="rating">
+										<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+									</div>
+								</div>
+							</figcaption>
+							<div class="bookDetails">
+								<button class="feed-btn">More</button>
 							</div>
-						</figcaption>
-						<div class="bookDetails">
-							<button>More</button>
 						</div>
 					</figure>
+
+				</div>
+				<div class="feed">
+					<figure class="feedBook">
+						<!-- книга -->
+						<img src="http://placehold.it/200x150" alt="book image" width="150" height="150">
+						<div class="bookInfo-wrapper">
+							<figcaption class="bookInfo">
+								<div class="bookName">Book Name</div>
+								<div class="bookAuthor">Author</div>
+								<div class="bookUser">
+									<span class="userName">User1</span>
+									<div class="rating">
+										<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+									</div>
+								</div>
+							</figcaption>
+							<div class="bookDetails">
+								<button class="feed-btn">More</button>
+							</div>
+						</div>
+					</figure>
+
+				</div>
+				<div class="feed">
+					<figure class="feedBook">
+						<!-- книга -->
+						<img src="http://placehold.it/200x150" alt="book image" width="150" height="150">
+						<div class="bookInfo-wrapper">
+							<figcaption class="bookInfo">
+								<div class="bookName">Book Name</div>
+								<div class="bookAuthor">Author</div>
+								<div class="bookUser">
+									<span class="userName">User1</span>
+									<div class="rating">
+										<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+									</div>
+								</div>
+							</figcaption>
+							<div class="bookDetails">
+								<button class="feed-btn">More</button>
+							</div>
+						</div>
+					</figure>
+
 				</div>
 				<section id="bookPopUp">
 					<div class="bookPopUpWrap">
@@ -75,16 +134,17 @@
 			<section id="registration">
 				<form class="registrationForm">
 					<fieldset class="registrationFormFieldset">
-						Ім'я*<br> <input type="text" name="userName" placeholder="Ім'я" size="35" required><br>
-						e-mail*<br> <input type="email" name="userEmail" placeholder="e-mail" size="35" required><br>
-						телефон*(5-15 цифр)<br> <input type="tel" name="userPhone" placeholder="телефон" size="13" pattern="[0-9]{5,15}" required><br>
-						місто*<br> <input type="text" name="userCity" placeholder="місто" size="35" onKeyUp="if(/[^a-zA-Zа-яА-Яі .]/i.test(this.value)){this.value='';}" required><br>
+						Ім'я*<br> <input type="text" name="userName" placeholder="Ім'я" size="35" required><br> e-mail*
+						<br> <input type="email" name="userEmail" placeholder="e-mail" size="35" required><br> телефон*(5-15 цифр)<br>
+						<input type="tel" name="userPhone" placeholder="телефон" size="13" pattern="[0-9]{5,15}" required><br> місто*
+						<br> <input type="text" name="userCity" placeholder="місто" size="35" onKeyUp="if(/[^a-zA-Zа-яА-Яі .]/i.test(this.value)){this.value='';}"
+						 required><br>
 					</fieldset>
 					<button>Ok</button>
 				</form>
 			</section>
 		</main>
-		<aside id="filter">
+		<aside class="sidebar" id="filter">
 			<!-- фільтр -->
 			<form>
 				<select>
@@ -129,19 +189,21 @@
 					<option value="pl">Polish</option>
 				</select>
 				<input type="number" name="year" placeholder="Year of publishing">
-				<input type="checkbox" checked id="filterReturn" name="return" value="return"> 
+				<input type="checkbox" checked id="filterReturn" name="return" value="return">
 				<label for="filterReturn">Return</label>
-				<input type="checkbox" checked id="filterNoReturn" name="" value="noReturn"> 
+				<input type="checkbox" checked id="filterNoReturn" name="" value="noReturn">
 				<label for="filterNoReturn">No Return</label>
-				<input type="checkbox" checked id="filterExchange" name="" value="noReturn"> 
+				<input type="checkbox" checked id="filterExchange" name="" value="noReturn">
 				<label for="filterExchange">Exchange</label>
-				<input type="checkbox" id="filterSell" name="" value="sell"> 
+				<input type="checkbox" id="filterSell" name="" value="sell">
 				<label for="filterSell">Sell</label>
 				<input type="number" name="bookprice" placeholder="0.00 грн">
 				<input type="submit" name="">
 			</form>
 		</aside>
-		<footer></footer>
-		<script src="script.js"></script>
-	</body>
+	</div>
+	<footer></footer>
+	<script src="script.js"></script>
+</body>
+
 </html>

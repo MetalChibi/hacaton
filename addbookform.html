@@ -1,99 +1,119 @@
-
 <!-- saved from url=(0091)file:///C:/Users/Lampe/AppData/Roaming/Skype/My%20Skype%20Received%20Files/addbookform.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body><form id="addBook">
-<button>&lt;&lt; BACK</button>
+<html>
 
-<h1>Add your book</h1>
-<p class="note">* Required fields.</p>
+<head>
+	<link rel="stylesheet" href="css/style2.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<script src="https://use.fontawesome.com/aa00dd93b3.js"></script>
+</head>
 
-<!-- name -->
-<p>
-	* Book name: <input type="text" name="name" placeholder="Name" required="">
-</p>
+<body>
+	<div class="form-wrapper">
+		<a href="#">&lt;&lt; BACK</a>
+		<h1 class="form-title">Add your book</h1>
+		<p class="note">* Required fields.</p>
 
-<!--author-->
-<p>
-	* Author: <input type="text" name="author" placeholder="Author" required="">
-</p>
+		<form id="addBook">
+			<!-- name -->
+			<label for="book-name">
+				<i class="fa fa-user"></i>* Book name: 
+			</label>
+			<input class="form-field__block" type="text" name="book-name" placeholder="Name" required="">
 
-<!--genre-->
-<p>* Genre: 
-	<select placeholder="Genre" required="">
-  <option value="" selected="" disabled="">Pick genre</option>
-<option value="scienceFiction">Science fiction</option>
-<option value="satire">Satire</option>
-<option value="drama">Drama</option>
-<option value="actionAndAdventures">Action and Adventure</option>
-<option value="romance">Romance</option>
-<option value="mystery">Mystery</option>
-<option value="horror">Horror</option>
-<option value="selfHelp">Self help</option>
-<option value="health">Health</option>
-<option value="guide">Guide</option>
-<option value="travel">Travel</option>
-<option value="children">Children's</option>
-<option value="religion">Religion, Spirituality &amp; New Age</option>
-<option value="science">Science</option>
-<option value="history">History</option>
-<option value="math">Math</option>
-<option value="anthology">Anthology</option>
-<option value="poetry">Poetry</option>
-<option value="encyclopedias">Encyclopedias</option>
-<option value="dictionaries">Dictionaries</option>
-<option value="comics">Comics</option>
-<option value="art">Art</option>
-<option value="cookbooks">Cookbooks</option>
-<option value="diaries">Diaries</option>
-<option value="journals">Journals</option>
-<option value="pray">Prayer books</option>
-<option value="series">Series</option>
-<option value="trilogy">Trilogy</option>
-<option value="biographies">Biographies</option>
-<option value="autobiographies">Autobiographies</option>
-<option value="fantasy">Fantasy</option>
-</select>
-</p>
+			<!--author-->
+			<label for="author"> 
+				<i class="fa fa-book"></i>* Author name:
+			</label>
+			<input class="form-field__block" type="text" name="author" placeholder="Author" required="">
 
-<!--year-->
-<p>
-	* Year: <input type="number" name="year" required="" placeholder="E.g., 2017">
-</p>
+			<!--genre-->
+			<label for="gender">
+				<i class="fa fa-venus-mars"></i>* Genre:
+			</label>
+			<select id="gender" placeholder="Genre" required class="form-field">
+					<option value="" selected="" disabled="">Pick genre</option>
+					<option value="scienceFiction">Science fiction</option>
+					<option value="satire">Satire</option>
+					<option value="drama">Drama</option>
+					<option value="actionAndAdventures">Action and Adventure</option>
+					<option value="romance">Romance</option>
+					<option value="mystery">Mystery</option>
+					<option value="horror">Horror</option>
+					<option value="selfHelp">Self help</option>
+					<option value="health">Health</option>
+					<option value="guide">Guide</option>
+					<option value="travel">Travel</option>
+					<option value="children">Children's</option>
+					<option value="religion">Religion, Spirituality &amp; New Age</option>
+					<option value="science">Science</option>
+					<option value="history">History</option>
+					<option value="math">Math</option>
+					<option value="anthology">Anthology</option>
+					<option value="poetry">Poetry</option>
+					<option value="encyclopedias">Encyclopedias</option>
+					<option value="dictionaries">Dictionaries</option>
+					<option value="comics">Comics</option>
+					<option value="art">Art</option>
+					<option value="cookbooks">Cookbooks</option>
+					<option value="diaries">Diaries</option>
+					<option value="journals">Journals</option>
+					<option value="pray">Prayer books</option>
+					<option value="series">Series</option>
+					<option value="trilogy">Trilogy</option>
+					<option value="biographies">Biographies</option>
+					<option value="autobiographies">Autobiographies</option>
+					<option value="fantasy">Fantasy</option>
+				</select>
 
-<!--language-->
-<p>
-	* Language:
-	<select name="Language" required="">
-		<option value="" selected="" disabled="">Pick language</option>
-		<option value="ua">Ukrainian</option>
-		<option value="ru">Russian</option>
-		<option value="en">English</option>
-		<option value="pl">Polish</option>
-	</select>
-</p>
 
-<!--book photo-->
-<p>
-	Upload photo: <input type="file" name="bookphoto"> 
-</p>
+			<!--year-->
+			<label for="year">
+				<i class="fa fa-calendar"></i>* Year: 
+			</label>
+			<input class="form-field" type="number" name="year" required placeholder="E.g., 2017">
 
-<!--terms-->
-<p>Exchange terms:</p>
-	<input type="radio" name="exchangeTerms" value="return" id="termsReturn">
-		<label for="termsReturn">With return</label><br>
-			Due date: <input type="date" value="returndate"><br>
-	<input type="radio" name="exchangeTerms" value="noReturn" id="termsNoReturn">
-		<label for="termsNoReturn">No return</label><br>
-	<input type="radio" name="exchangeTerms" value="withExchange" id="termsWithExchange">
-		<label for="termsWithExchange">Exchange</label><br>
+			<!--language-->
+			<label for="Language">
+				<i class="fa fa-globe"></i>* Language:
+			</label>
+
+			<select class="form-field" name="Language" required>
+				<option value="" selected="" disabled="">Pick language</option>
+				<option value="ua">Ukrainian</option>
+				<option value="ru">Russian</option>
+				<option value="en">English</option>
+				<option value="pl">Polish</option>
+			</select>
+
+
+			<!--book photo-->
+			<label for="bookphoto">Upload photo:</label>
+			<input type="file" name="bookphoto">
+
+			<!--terms-->
+			<p>Exchange terms:</p>
+			<input type="radio" name="exchangeTerms" value="return" id="termsReturn">
+			<label for="termsReturn">With return</label><br> Due date: <input type="date" value="returndate"><br>
+			<input type="radio" name="exchangeTerms" value="noReturn" id="termsNoReturn">
+			
+			<label for="termsNoReturn">No return</label><br>
+			<input type="radio" name="exchangeTerms" value="withExchange" id="termsWithExchange">
+			
+			<label for="termsWithExchange">Exchange</label><br>
 			<textarea placeholder="Exchange for..."></textarea><br>
-	<input type="radio" name="exchangeTerms" value="sell" id="termsSell">
-		<label for="termsSell">Sell</label><br><br>
-			Sell price: <input type="number" name="bookprice" placeholder="$0.00">
-			<br>
 
-<!--OK-->
-<button>Add book</button> 
-<button>Cancel</button> <br>
+			<input type="radio" name="exchangeTerms" value="sell" id="termsSell">
+
+			<label for="termsSell">Sell</label> Sell price: 
+			<input type="number"  class="form-field" name="bookprice" placeholder="$0.00">
+
+			<!--OK-->
+			<button class="main-btn">Add book</button>
+			<button class="main-btn">Cancel</button> <br>
 
 
-</form></body></html>
+		</form>
+	</div>
+</body>
+
+</html>

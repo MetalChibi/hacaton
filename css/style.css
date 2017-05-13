@@ -13,11 +13,44 @@ body {
 a {
     text-decoration: none;
 }
+
+img {
+    width: 100%;
+    height: auto;
+}
+
 li {
     list-style: none;
 }
+
+button, input{
+    border: none;
+}
 /* ================================= 
   Base Layout Styles*/
+
+.content-wrapper{
+    display: flex;
+    padding: 0 2rem;
+}
+
+.sidebar{
+    width: 22%;
+    background: red;
+}
+
+.main-content{
+    width: 56%
+}
+
+
+.feedWrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #f6f6f6;
+}
+
 
 #bookPopUp {
     display: none;
@@ -74,7 +107,122 @@ li {
     display: none;
 }
 /* ---- Navigation ---- */
+.main-nav{
+    display: flex;
+    padding: 1rem 2rem;
+    background: #989AD7;
+    font-weight: bold;
+}
+
+.main-nav a{
+    padding: 0 0.5rem;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+}
+
+.main-nav .active{
+    text-decoration: underline;
+}
+
+.main-nav a:hover{
+     color: rgba(255, 255, 255, 0.5);
+}
+
+.main-nav a:not(:last-child)::after{
+    content: "";
+    position: absolute;
+    right: -5px;
+    width: 1px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.main-nav a:nth-last-child(2){
+  margin-left: auto;
+}
+
+.main-nav a:last-child {
+  width: 50px;
+}
+.main-nav a:last-child i{
+  position: absolute;
+  top: -2px;
+  left: 15px;
+  font-size: 2.2rem;
+}
 /* ---- Layout Containers ---- */
+
+/*-------books adds-------*/
+
+.feed{
+    width: 31%;
+    margin-bottom: 20px;
+    background: #fff;
+    color: #333;
+    box-shadow: 0 10px 20px rgba(21,29,116,0.2);
+}
+
+.bookInfo-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*align-items: center;*/
+    padding: 10px;
+}
+
+
+/*-------reting stars------*/
+.rating {
+  text-align: center;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+   color: yellow;
+}
+
+
+/*-----Buttons-------*/
+.feed-btn {
+	display: block;
+	padding: 5px 8px;
+	color: #fff;
+	text-transform: uppercase;
+	background: #1E1E20;
+	border-radius: 5px;
+}
+
+.feed-btn:hover {background: #888;}
+
+.main-btn{
+    position: relative;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color:#fff;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+    background: #F23F79;
+}
+
+.main-btn:hover{
+    background: #d60e4f;
+}
+
+.main-btn:active{
+    top: 2px;
+    box-shadow: none;
+}
+
+/*--Input forms--*/
 /* ================================= 
   Media Queries
 ==================================== */
