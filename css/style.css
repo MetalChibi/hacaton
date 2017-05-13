@@ -14,11 +14,6 @@ a {
     text-decoration: none;
 }
 
-img {
-    width: 100%;
-    height: auto;
-}
-
 li {
     list-style: none;
 }
@@ -257,8 +252,13 @@ button, input{
 
 
 /*-------reting stars------*/
-.rating {
+.feedbook .rating {
   text-align: center;
+}
+.bookUser .rating {
+  text-align: center;
+}
+.rating {
   unicode-bidi: bidi-override;
   direction: rtl;
 }

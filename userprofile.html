@@ -2,43 +2,48 @@
 <html>
 <head>
 	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://use.fontawesome.com/aa00dd93b3.js"></script>
+	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/style2.css">
 	<link rel="stylesheet" href="css/style3.css">
-	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-	<script src="https://use.fontawesome.com/aa00dd93b3.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <script src="bookpopup.js" defer></script>
 </head>
 <body>
 
 
 
 <!--user settings-->
-<img class="userpic" src="http://lorempixel.com/200/200" width="200">
-<h1 class="username">John Doe</h1>  <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+<img class="userpic" src="img/pic.jpg">
+<h1 class="username">John Doe</h1> 
+
+								<div class="bookUser">
 									<div class="rating">
 										<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
 									</div>
+								</div>
 <h2 class="usersettings">Personal data</h2>
 <p><b>Phone:</b> <span id="phoneNumber">+380001112233</span></p>
 <p><b>City:</b> <span id="phoneNumber">Lviv</span></p>
 <h2 class="usersettings">My transactions</h2>
 
-<figure class="feedBook">
-		<img src="http://placehold.it/150x200" alt="book image" width="150" height="150">
+<figure class="userBook">
+		<img src="img/pic.jpg" alt="book image" width="150" height="200">
 		<div class="bookInfo-wrapper">
 				<figcaption class="bookInfo">
-								<div class="bookName">Book Name</div>
-								<div class="bookAuthor">Author</div>
+								<div class="bookName">Hobbit</div>
+								<div class="bookAuthor">J. R. R. Tolkien</div>
+								<div class="bookSummary">Bacon ipsum dolor amet sausage doner kevin pancetta. Burgdoggen tenderloin cow venison shankle beef biltong turkey brisket strip steak pork belly drumstick beef ribs pork. Swine shoulder shank jerky turkey tail jowl chicken. Pork belly capicola salami tenderloin pork ham pork chop boudin.</div>
 								<div class="bookUser">
-									<span class="userName">User1</span>
+									<p>Transaction rating:</p>
 									<div class="rating">
 										<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
 									</div>
 								</div>
 							</figcaption>
-							<div class="bookDetails">
-								<button class="feed-btn ">More</button>
-							</div>
 						</div>
 					</figure>
 
