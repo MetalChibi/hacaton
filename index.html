@@ -26,19 +26,19 @@
 			<!-- реклама -->
 		</aside>
 		<main class="main-content">
-			<header class="mainTop">
-				<button class="main-btn">Add book</button>
+			<header class="primary-header">
+				<button class="main-btn">Add new book</button>
 				<div class="sort">
-					<p>Sort by</p>
-					<a href="">date</a>
-					<a href="">name</a>
-					<a href="">rate</a>
+					<label for="sort">Sort by:</label>
+					<select name="sort">
+						<option value="all" selected>date</option>
+						<option value="scienceFiction">name</option>
+						<option value="satire">rate</option>
+					</select>
 				</div>
-				<form id="searchForm">
-					<div class="search">
-						<input type="search" name="search" placeholder="find">
-						<input type="image" src="#">
-					</div>
+				<form class="navbar__search">
+					<input type="search" class="navbar__search__input" name="search" />
+					<i class="fa fa-search"></i>
 				</form>
 			</header>
 			<div class="feedWrapper">
