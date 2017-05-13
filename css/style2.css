@@ -1,3 +1,37 @@
+/*--Pretty radion buttons--*/
+input[type="radio"] + label::before {
+  / Outer Circle of radio button /
+  border: 1px solid grey;
+  content: ' ';
+  display: inline-block;
+  margin-right: 5px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  transition: border 0.15s ease-in-out;
+}
+
+input[type="radio"] + label::after {
+  / Inner Circle of radio button /
+  border: 0px solid  #F23F79;
+  content: ' ';
+  background: transparent;
+  display: inline-block;
+  margin-right: 5px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  transition: border 0.15s ease-in-out;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+
 /* Terms triggers */
 hr {
   margin: 15 0 15 0;
